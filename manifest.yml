@@ -1,0 +1,16 @@
+modules:
+  trigger:
+    - key: jira-issue-creation-trigger
+      function: main
+      events:
+        - avi:jira:created:issue
+  function:
+    - key: main
+      handler: index.onIssueCreated
+permissions:
+  scopes:
+    - 'read:jira-work'
+    - 'read:page:confluence'
+    - 'write:page:confluence'
+app:
+  id: ari:cloud:ecosystem::app/d1d1f5be-a10d-45d2-9ead-2b61da7ce8b3
