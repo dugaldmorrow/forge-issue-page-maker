@@ -19,8 +19,7 @@ async function addPage(issueKey, parentId, spaceId) {
     `<ac:structured-macro
       ac:name=\"jira\"
       ac:schema-version=\"1\"
-      ac:local-id=\"${localId}\"
-      ac:macro-id=\"${macroId}\">
+    >
       <ac:parameter ac:name=\"server\">System JIRA</ac:parameter>
       <ac:parameter ac:name=\"columns\">${columnNames}</ac:parameter>
       <ac:parameter ac:name=\"maximumIssues\">20</ac:parameter>
